@@ -20,6 +20,12 @@
 	}
 }
 
+@media (max-width: 515px) {
+	.masterpiece p {
+		text-align: justify;
+	}
+}
+
 @media (max-width: 414px) {
 	.prod-card__body {
     flex: 0 1 100%;

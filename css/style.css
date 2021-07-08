@@ -844,7 +844,7 @@ body.ie .ibg img {
     border-radius: 35px; }
 
 .masterpiece {
-  padding: 30px 0; }
+  padding-top: 30px; }
 
 .masterpiece h1 {
   font-size: 36px;
@@ -920,6 +920,10 @@ body.ie .ibg img {
     -ms-flex: 0 1 49.5%;
     flex: 0 1 49.5%;
     margin-bottom: 5px; } }
+
+@media (max-width: 515px) {
+  .masterpiece p {
+    text-align: justify; } }
 
 @media (max-width: 414px) {
   .prod-card__body {
