@@ -1,0 +1,62 @@
+//<Адаптив>===========================================================================================================================================
+@media (max-width: 1100px) {
+	.container {
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		position: fixed;
+		width: 100%;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	}
+	.icon-menu {
+		display: block;
+	}
+	.menu__body {
+		display: none;
+	}
+	.header__callback {
+    margin-right: 20px;
+	}
+}
+
+@media (max-width: 700px) {
+	.mob-menu {
+		width: 100%;
+		right: -100%;
+		-webkit-transition: right 0.8s;
+		-o-transition: right 0.8s;
+		transition: right 0.8s; }
+	}
+
+@media (max-width: 515px) {
+	.header__callback {
+    display: none; }
+	.mob-callback__phone {
+    display: flex; 
+		margin-right: 25px;
+	}
+}
+
+@media (max-width: 480px) {
+	.header__search {
+    display: none;
+	}
+	.mob-search {
+    display: flex;
+	}
+	.header__search.active {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    max-width: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    margin: 0;
+	}
+	.search__input {
+    border-radius: 0 !important;
+	}
+}
