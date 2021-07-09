@@ -8,6 +8,7 @@ jQuery("input[type=tel]").inputmask(inputmask_phone);
 jQuery('.popup-form button').click(function (e) {
 	e.preventDefault();
 
+	let title = jQuery('.popup__title').html();
 	let persPhone = jQuery('.popup-form input[name=tel]').val();
 	if ((persPhone == "") || (persPhone.indexOf("_") > 0)) {
 		$(this).siblings('input[name=tel]').css("background-color", "#ff91a4")
@@ -15,11 +16,12 @@ jQuery('.popup-form button').click(function (e) {
 	}
 
 	var jqXHR = jQuery.post(
-		"../sender/send.php",
+		"sender/send.php"
 		{
 			phone: jQuery('.popup-form input[name=tel]').val(),
 			name: jQuery('.popup-form input[name=name]').val(),
-			mail: jQuery('.popup-form textarea[name=text]').val(),
+			mail: jQuery('.popup-form input[name=email]').val(),
+			title: title,
 		}
 
 	);
@@ -30,7 +32,7 @@ jQuery('.popup-form button').click(function (e) {
 		document.location.href = "../thank-you.html";
 		jQuery('.popup-form input[name=tel]').val("");
 		jQuery('.popup-form input[name=name]').val("");
-		jQuery('.popup-form textarea[name=text]').val("");
+		jQuery('.popup-form input[name=email]').val("");
 	});
 
 	jqXHR.fail(function (responce) {
