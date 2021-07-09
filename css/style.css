@@ -610,6 +610,7 @@ body.ie .ibg img {
 .masterpiece {
   padding-top: 30px; }
 
+.thanks h1,
 .masterpiece h1 {
   font-size: 36px;
   font-weight: 700;
@@ -664,6 +665,12 @@ body.ie .ibg img {
 
 .masterpiece ul li:last-child {
   margin-bottom: 0; }
+
+.thanks p {
+  font-size: 20px; }
+
+.thanks .prod-card {
+  margin-top: 25px; }
 
 @media (max-width: 1200px) {
   .container {
