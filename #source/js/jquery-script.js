@@ -16,7 +16,7 @@ jQuery('.popup-form button').click(function (e) {
 	}
 
 	var jqXHR = jQuery.post(
-		"sender/send.php"
+		"../sender/send.php",
 		{
 			phone: jQuery('.popup-form input[name=tel]').val(),
 			name: jQuery('.popup-form input[name=name]').val(),
